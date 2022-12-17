@@ -1,5 +1,5 @@
 # Percolation
-Repository for the Software and Computing for Applied Physics Exam
+
 In general, percolation describes the behavior of clusters connected in a random graph.
 One may wonder whether or not taken a sample of porous material, liquid poured on one face can reach another through the holes that occupy a fraction of the volume of the material. 
 
