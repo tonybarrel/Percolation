@@ -1,4 +1,3 @@
-
 %main code: iterates the "regroup" function for all probabilities,
 %focusing in the [0.5-0.6] interval. then iterates the process for
 %different "stories".
