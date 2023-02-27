@@ -5,7 +5,7 @@ function [mask]=initial_mask(N,M,p)
 %return the mask with extra borders
 if 0<=p && p<=1
     if N>1 && M>1
-        rng(1);
+        rng default;
         mask=rand(N,M)<p;
               % adding extra borders for boundaries problems
         mask = [zeros(1,size(mask,2)); mask; zeros(1,size(mask,2))]; 
