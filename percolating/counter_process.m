@@ -2,7 +2,7 @@
 %this function evaluates the sites of the initial mask and build a second
 %matrix (label) that consider the 4 nearest neighbours of the initial site,
 %assigning a counter value for non zero sites
-%Parameters= mask: configuration created by initial_mask;
+%Parameters = mask: configuration created by initial_mask;
 %return the initial mask and the label one
  counter=1;
  label=zeros(size(mask));

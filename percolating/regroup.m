@@ -2,7 +2,7 @@ function [label,mask]=regroup(mask)
 %this function evaluates the sites of the initial mask and build a second
 %matrix (label) that consider the 4 nearest neighbours of the initial site,
 %assigning a counter value for non zero sites and connect them in a cluster
-%Parameters= mask: configuration created by initial_mask;
+%Parameters = mask: configuration created by initial_mask;
 %return the label matrix (and therefore the percolation pattern) and the initial
 %mask
  counter=1;
