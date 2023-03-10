@@ -29,7 +29,7 @@ I divided my project into folders:
 
 - In the [percolating](https://github.com/tonybarrel/Percolation/tree/main/percolating) folder, I have built all the necessary function to perform the project for a given probability. The [regroup](https://github.com/tonybarrel/Percolation/blob/main/percolating/regroup.m) and [initial_mask](https://github.com/tonybarrel/Percolation/blob/main/percolating/initial_mask.m) ones are exclusively for the percolation build-up, while the [substitute](https://github.com/tonybarrel/Percolation/blob/main/percolating/substitue.m) is an iterative function, constantly performed to attach distant clusters and the [results](https://github.com/tonybarrel/Percolation/blob/main/percolating/results.m) states if a matrix has reached percolation. A [counter_process](https://github.com/tonybarrel/Percolation/blob/main/percolating/counter_process.m) function is also present, used to perform the substitute testing function.
 
-- In the [config]((https://github.com/tonybarrel/Percolation/blob/main/config.m) file, there are all the definitions of the parameters used in the simulation file, as the dimensions of the lattice (N*M), the probability interval, the rng seed and the imaging probability interval.
+- In the [config](https://github.com/tonybarrel/Percolation/blob/main/config.m) file, there are all the definitions of the parameters used in the simulation file, as the dimensions of the lattice (N*M), the probability interval, the rng seed and the imaging probability interval.
 
 - In the [testing](https://github.com/tonybarrel/Percolation/tree/main/testing) folder, I have tested all the Percolating functions.
 
