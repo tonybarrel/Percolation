@@ -4,14 +4,14 @@
 %return a table "percolation" that states if the system has reached
 %percolation (filling it with 1) or not (with 0)
 
-load('config.mat','N','M','p','len');
+load('config.mat','N','M','p','s','len');
 addpath(genpath('percolating'));
 addpath(genpath('plots'));
 addpath(genpath('testing'));
 
 percolation=zeros(1,len);
     for z=1:len
-           [mask]=initial_mask(N,M,p(z));
+           [mask]=initial_mask(N,M,p(z),s);
            [label]=regroup(mask);
            [perc]=results(label);
            percolation(1,z)=perc;
