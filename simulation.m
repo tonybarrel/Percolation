@@ -19,6 +19,7 @@ percolation=zeros(1,len);
 
 save('config.mat','percolation','-append');
 prob_graph(percolation);
+imaging();
 
         
     
