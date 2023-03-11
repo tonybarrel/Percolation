@@ -39,8 +39,10 @@ I divided my project into folders:
 
 To show some results:
 
-1. This is the plot of the percolation probability for a default seed and for a v5 normal seed:
+1. This is the plot of the percolation probability for a default seed:
+
 ![config](https://github.com/tonybarrel/Percolation/blob/main/images/prob_percol.png)
 
-2. This is the image of the lattice for different probabilities, also for a default and a v5 normal seed. The spanning cluster can be seen from a 0.66 for the default seed and already from 0.6 for the v5 normal one.
+2. This is the image of the lattice for different probabilities. The spanning cluster can be seen from a 0.66 for the default seed.
+ 
 ![config](https://github.com/tonybarrel/Percolation/blob/main/images/imaging.png)
