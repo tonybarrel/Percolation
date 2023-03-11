@@ -10,4 +10,5 @@ subplot(2,3,z)
 imagesc(label)
 title(['p = ' num2str(ip(z))])
 end
+saveas(gcf,'./images/imaging.png');
 end
