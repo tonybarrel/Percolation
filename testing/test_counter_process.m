@@ -1,8 +1,8 @@
 function test_counter_process()
-load('config.mat','N','M','p','len');
+load('config.mat','N','M','p','len','s');
 
 for z=1:len
-[mask]=initial_mask(N,M,p(z));
+[mask]=initial_mask(N,M,p(z),s);
 [mask,label]=counter_process(mask);
 assert (size(mask,1)==size(label,1));%test same matrices dimensions
 assert (size(mask,2)==size(label,2));
