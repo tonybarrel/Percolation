@@ -23,7 +23,7 @@ A substitute algorithm is consistently performed to attach distant cluster. The 
 These are the steps in order to start the program and to plot the results:
 1. First, the user has to choose between the different lattice configurations (in our case there is only one, [config](https://github.com/tonybarrel/Percolation/blob/main/config.m) and eventually overwrite a new one, using the syntax of config); if the user wants to do so, he has to specify the lattice parameters (N, M, the p interval, the s rng value, the ip interval for the imaging function). Then, the user has to launch the config.m to save the parameters in the Workspace.
 2. To start the percolation algorithm, the user has to launch the file [simulation](https://github.com/tonybarrel/Percolation/blob/main/simulation.m) which imports its parameters from [config](https://github.com/tonybarrel/Percolation/blob/main/config.m) and return the percolation probability.
-3. The [simulation](https://github.com/tonybarrel/Percolation/blob/main/simulation.m) returns also two plots: the probability of percolation and the image of the lattice for different probabilities. If the user wants to modify those, he can change the 'ip' and 'lenip' values in the [config](https://github.com/tonybarrel/Percolation/blob/main/config.m).
+3. The [plots](https://github.com/tonybarrel/Percolation/tree/main/plots) returns also two graphs: the probability of percolation and the image of the lattice for different probabilities. If the user wants to modify those, he can change the 'ip' and 'lenip' values in the [config](https://github.com/tonybarrel/Percolation/blob/main/config.m).
 
 I divided my project into folders:
 
