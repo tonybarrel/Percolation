@@ -3,7 +3,7 @@ function [plots,prob_crit]=prob_graph(percolation)
 %probability and then perform a graph
 %Parameters= percolation: table created by replay(N,M,N_stories)
 %return the graph "Probability of percolation"
-
+load('config.mat','percolation');
 data=percolation;
 p=[0.01:0.01:0.55, 0.55:0.005:0.68, 0.68:0.01:1];
 plots=plot(p,data,'*r');
