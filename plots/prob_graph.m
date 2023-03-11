@@ -1,7 +1,7 @@
 function [plots,prob_crit]=prob_graph()
-%this function evaluates the mean value of percolation for a given
+%this function evaluates the value of percolation for a given
 %probability and then perform a graph
-%Parameters= percolation: table created by replay(N,M,N_stories)
+%Parameters= percolation: table created by replay(N,M)
 %return the graph "Probability of percolation"
 load('config.mat','percolation');
 data=percolation;
