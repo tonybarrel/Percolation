@@ -35,10 +35,14 @@ I divided my project into folders:
 
 - In the [simulation](https://github.com/tonybarrel/Percolation/blob/main/simulation.m) file, all the percolating function are called and performed for the all probabilities. An extra focus is put in the 0.55-0.65 interval, where the percolation probability is situated. A phase transition is showed in the graph fome a non-percolating to a percolating system. 
 
-- In the [plots](https://github.com/tonybarrel/Percolation/tree/main/plots) folder, there are the two functions that respectively plot the percolation probability and the image of the lattice for a given set of probabilities.
+- In the [plots](https://github.com/tonybarrel/Percolation/tree/main/plots) folder, there are the two functions that respectively plot the percolation probability and the image of the lattice for a given set of probabilities and saves them in the [images](https://github.com/tonybarrel/Percolation/tree/main/images) folder.
 
 To show some results:
 
-1. This is the plot of the percolation probability for a default seed and for a v5 normal seed:
+1. This is the plot of the percolation probability for a default seed. The critical probability is obtained at p=0.6575:
 
-2. This is the image of the lattice for different probabilities, also for a default and a v5 normal seed. The spanning cluster can be seen from a 0.66 for the default seed and already from 0.6 for the v5 normal one.
+![config](https://github.com/tonybarrel/Percolation/blob/main/images/prob_percol.png)
+
+2. This is the image of the lattice for different probabilities. The spanning cluster can be seen from a 0.66 probability for the default seed.
+ 
+![config](https://github.com/tonybarrel/Percolation/blob/main/images/imaging.png)
