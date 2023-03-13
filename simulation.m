@@ -18,6 +18,7 @@ percolation=zeros(1,len);
     end
 
 save('config.mat','percolation','-append');
+save('./plots/config.mat','percolation','-append');
        
     
     

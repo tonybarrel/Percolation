@@ -7,3 +7,5 @@ s=rng;
 ip=[0.1 0.5 0.65 0.66 0.7 1]; % Probability for the imaging function
 lenip=length(ip);
 save('config.mat');
+save('./plots/config.mat');
+save('./testing/config.mat');
