@@ -33,7 +33,7 @@ I divided my project into folders:
 
 - In the [testing](https://github.com/tonybarrel/Percolation/tree/main/testing) folder, I have tested all the Percolating functions.
 
-- In the [simulation](https://github.com/tonybarrel/Percolation/blob/main/simulation.m) file, all the percolating function are called and performed for the all probabilities. An extra focus is put in the 0.55-0.65 interval, where the percolation probability is situated. A phase transition is showed in the graph fome a non-percolating to a percolating system. 
+- In the [simulation](https://github.com/tonybarrel/Percolation/blob/main/simulation.m) file, all the percolating function are called and performed for the all probabilities. An extra focus is put in the 0.55-0.65 interval, where the percolation probability is situated. A phase transition is showed in the graph from a non-percolating to a percolating system. 
 
 - In the [plots](https://github.com/tonybarrel/Percolation/tree/main/plots) folder, there are the two functions that respectively plot the percolation probability and the image of the lattice for a given set of probabilities and saves them in the [images](https://github.com/tonybarrel/Percolation/tree/main/images) folder.
 
