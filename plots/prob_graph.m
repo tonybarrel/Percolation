@@ -6,6 +6,7 @@ function [plots,prob_crit]=prob_graph()
 load('config.mat','percolation');
 data=percolation;
 p=[0.01:0.01:0.55, 0.55:0.005:0.68, 0.68:0.01:1];
+figure;
 plots=plot(p,data,'*r');
 title('Probability of percolation')
 xlabel('p')
