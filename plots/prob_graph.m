@@ -15,5 +15,5 @@ y1=find(data==0);
 y2=find(data==1);
 prob_crit=(p(y1(1,end))+p(y2(1,1)))/2
 
-saveas(gcf,'./images/prob_percol.png');
+saveas(gcf,'././images/prob_percol.png');
 end
