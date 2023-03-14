@@ -41,8 +41,8 @@ To show some results:
 
 1. This is the plot of the percolation probability for a default seed. The critical probability is obtained at p=0.6575:
 
-![config](https://github.com/tonybarrel/Percolation/blob/main/images/prob_percol.png)
+![config](https://github.com/tonybarrel/Percolation/blob/main/plots/images/prob_percol.png)
 
 2. This is the image of the lattice for different probabilities. The spanning cluster can be seen from a 0.66 probability for the default seed.
  
-![config](https://github.com/tonybarrel/Percolation/blob/main/images/imaging.png)
+![config](https://github.com/tonybarrel/Percolation/blob/main/plots/images/imaging.png)
