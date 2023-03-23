@@ -1,14 +1,27 @@
-function test_isvalid_regroup(mask)
-[label,mask]=regroup(mask);
- for i=1:size(mask,1)-1
-    for j=1:size(mask,2)-1
-        %test that 0 and 1 in mask are linked also in label
-        if mask(i,j) == mask(i+1,j) 
-            assert (label(i,j) == label(i+1,j));
-        end
-        if mask(i,j) == mask(i,j+1) 
-            assert (label(i,j) == label(i,j+1));
-        end
-    end
-end
-end
+function test_isvalid_regroup()
+% This test function considers two expected label examples and by applying the
+% regroup function test its validity
+
+% Test 1: generic non percolating case
+mask = [0 0 0 0 0;
+        0 1 0 1 0;
+        0 0 1 0 0;
+        0 1 0 1 0;
+        0 0 0 0 0]; % Input mask
+expected_label = [1, 0, 2; 0, 3, 0; 4, 0, 5]; % Expected output label matrix
+expected_mask = [1, 0, 1; 0, 1, 0; 1, 0, 1]; % Expected output mask matrix
+[actual_label, actual_mask] = regroup(mask);
+assert(isequal(actual_label, expected_label), 'Test failed: label matrix not as expected');
+assert(isequal(actual_mask, expected_mask), 'Test failed: mask matrix not as expected');
+
+%Test 2: generic percolating case
+mask = [0 0 0 0 0;
+        0 0 1 1 0;
+        0 1 0 1 0;
+        0 1 1 1 0;
+        0 0 0 0 0];
+expected_label = [0, 1, 1; 1, 0, 1; 1, 1, 1];
+expected_mask = [0, 1, 1; 1, 0, 1; 1, 1, 1];
+[actual_label, actual_mask] = regroup(mask);
+assert(isequal(actual_label, expected_label), 'Test failed: label matrix not as expected');
+assert(isequal(actual_mask, expected_mask), 'Test failed: mask matrix not as expected');

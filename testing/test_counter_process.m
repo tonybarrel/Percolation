@@ -1,5 +1,5 @@
 function test_counter_process()
-load('config.mat','N','M','p','len','s');
+
 
 for z=1:len
 [mask]=initial_mask(N,M,p(z),s);

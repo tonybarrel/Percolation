@@ -5,9 +5,9 @@ function [label,mask]=regroup(mask)
 %Parameters = mask: configuration created by initial_mask;
 %return the label matrix (and therefore the percolation pattern) and the initial
 %mask
+
  counter=1;
  label=zeros(size(mask));
- 
  for i=2:size(mask,1)-1
     for j=2:size(mask,2)-1
          if  mask(i,j)~=0
@@ -20,7 +20,7 @@ for i=2:size(label,1)-1
     for j=2:size(label,2)-1
         if  label(i,j)~=0
             minimum=label(i,j); %verifying in the 4 nearest neighbours the minimum value of the label
-            [min_neighbour]=neighbours(label,i,j);
+            [min_neighbour,label]=neighbours(label,i,j);
             if min_neighbour <= minimum
               minimum=min_neighbour;
               copy=label(i,j);
@@ -28,19 +28,15 @@ for i=2:size(label,1)-1
               [label]=substitute(label,copy,minimum);%use a substitute function in order to double check possible neighbours connected but not yet visualized
             else
                copy=min_neighbour;
-               label(i,j)=minimum;
+               
                [label]=substitute(label,copy,minimum);
             end
         end
     end
 end
-
-
 %remove external zeros
-
 mask = mask(2:size(mask,1)-1,2:size(mask,2)-1);
 label = label(2:size(label,1)-1,2:size(label,2)-1); 
-
 end
 
 

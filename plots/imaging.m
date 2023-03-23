@@ -1,4 +1,8 @@
 function imaging()
+%this function plot 6 images of different lattice for a given set of
+%probabilities loaded from the config. It then saves the plots in the images
+%folder
+
 load('config.mat','N','M','s','ip','lenip');
 j = cool;
 j(1,:) = [ 0 0 0 ];
