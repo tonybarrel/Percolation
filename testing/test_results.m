@@ -9,6 +9,7 @@ function test_results()
     [perc, last] = results(label);
     assert(perc == 0, 'Error: The perc value is incorrect');
     assert(strcmp(last, 'The system has not reached percolation'), 'Error: The last string is incorrect');
+    
 % Test case 2: Percolation scenario where opposite corners are occupied
     label = [1, 2, 3; 4, 5, 6; 3, 8, 9]; 
     [perc, last] = results(label);

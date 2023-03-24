@@ -7,9 +7,9 @@ mask = [0 0 0 0 0;
         0 1 0 1 0;
         0 0 1 0 0;
         0 1 0 1 0;
-        0 0 0 0 0]; % Input mask
-expected_label = [1, 0, 2; 0, 3, 0; 4, 0, 5]; % Expected output label matrix
-expected_mask = [1, 0, 1; 0, 1, 0; 1, 0, 1]; % Expected output mask matrix
+        0 0 0 0 0]; 
+expected_label = [1, 0, 2; 0, 3, 0; 4, 0, 5]; % Expected output
+expected_mask = [1, 0, 1; 0, 1, 0; 1, 0, 1]; % Expected output 
 [actual_label, actual_mask] = regroup(mask);
 assert(isequal(actual_label, expected_label), 'Test failed: label matrix not as expected');
 assert(isequal(actual_mask, expected_mask), 'Test failed: mask matrix not as expected');
