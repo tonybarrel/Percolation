@@ -1,6 +1,6 @@
 function test_simulation()
 %This test function calls the percolation function with example inputs
-% then the first test that the percolation table is made of 0 or 1
+%the first tests that the percolation table is made of 0 or 1
 %the second one tests that the total amount of 1 are the number of
 %the table elements
 

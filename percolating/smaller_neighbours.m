@@ -16,7 +16,7 @@ for a=[1 -1]
        minimum=label(i,j+a);
        copy=label(i,j);
        label(i,j)=minimum;
-       [label]=substitute(label,copy,minimum); % double check possible neighbours connected but not yet visualized
+       [label]=substitute(label,copy,minimum); 
     end
 end                 
 end

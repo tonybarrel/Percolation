@@ -20,5 +20,4 @@ else
      last=('The system is percolated');
      perc=1;
 end
-
 end
