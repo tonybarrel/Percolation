@@ -1,5 +1,6 @@
 %main code: iterates the "regroup" function for all probabilities,
 %focusing in the [0.55-0.65] interval. 
+
 %Parameters= N,M: size of the matrix; 
 %return a table "percolation" that states if the system has reached
 %percolation (filling it with 1) or not (with 0)
