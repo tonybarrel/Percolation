@@ -1,6 +1,6 @@
 function test_results()
 %This test function consider two examples of label and by applying the
-%results function test where it has or not percolation
+%results function checks where it has or not percolation
 %in the second test it gives percolation even if there's no path, but in 
 %our algorithm if they have same value there is always a path
 
