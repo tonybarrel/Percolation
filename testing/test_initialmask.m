@@ -1,6 +1,6 @@
 function test_initialmask()
 %This test function calls the initial_mask function with example inputs
-%then the first test that the dimensions of the matrix are the (N,M) plus the extra borders
+%then the first tests that the dimensions of the matrix are the (N,M) plus the extra borders
 %the second one tests that the probability is really in the [0:1] interval
 
 len = 10;
