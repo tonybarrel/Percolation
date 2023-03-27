@@ -25,7 +25,7 @@ copy = 2;
 minimum = 1;
 [actual] = substitute(label, copy, minimum);
 assert(all(actual(:) <= label(:)), 'Test failed: substitute matrix not as expected');
-
+end
 
 
 
